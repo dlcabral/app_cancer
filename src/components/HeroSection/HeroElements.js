@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import {MdKeyboardArrowRight, MdArrowForward} from 'react-icons/md';
+import {Link} from 'react-scroll';
 
 export const HeroContainer = styled.div`
   background-image: linear-gradient(180deg, #65a6fe, #8c3fff);
@@ -131,6 +132,27 @@ export const ArrowRight = styled(MdKeyboardArrowRight)`
   margin-left: 8px;
   font-size: 20px;
 `
+
+export const NavLink = styled(Link)`
+  border-radius: 50px;
+  background: ${({primary}) => (primary ? 'linear-gradient(180deg, #00ffd8, #7cff8b)' : 'linear-gradient(to bottom right, #7cff8b, #00ffd8)')};
+  white-space: nowrap;
+  padding: ${({big}) => (big ? '14px 48px' : '12px 30px')};
+  color: ${({dark}) => (dark ? '#010606' : '#fff')};
+  font-size: ${({fontBig}) => (fontBig ? '20px' : '16px')};
+  outline: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    transition: all 0.2s ease-in-out;
+    background: ${({primary}) => (primary ? 'linear-gradient(180deg, #7cff8b, #00ffd8)' : 'linear-gradient(to bottom right, #00ffd8, #7cff8b)')};
+  }
+`;
 
 
 

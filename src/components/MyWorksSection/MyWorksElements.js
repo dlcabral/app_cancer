@@ -11,16 +11,11 @@ export const MyWorksContainer = styled.div`
   justify-content: center;
   align-items: center;
   background: #f9f9f9;
-  padding-top: 60px;
   font-family: system-ui;
+  padding-top: 20px;
 
   @media screen and (max-width: 1049px) {
-    margin-top: 300px;
-    height: 2300px;
-  }
-
-  @media screen and (max-width: 1482px) {
-    margin-top: 300px;
+    height: auto;
   }
 `;
 
@@ -42,7 +37,6 @@ export const MyWorksTitle = styled.h1`
 `;
 
 export const WorksRowWrapper = styled.div`
-  display: flex;
   width: 100%;
   margin-right: auto;
   margin-left: auto;
@@ -52,6 +46,7 @@ export const WorksRowWrapper = styled.div`
 `;
 
 export const WorksRow1 = styled.div`
+  display: flex;
   margin-right: auto;
   margin-left: auto;
   justify-content: center;
@@ -59,12 +54,11 @@ export const WorksRow1 = styled.div`
   width: 100%;
 
   @media screen and (min-width: 1050px) {
-    display: flex;
     flex-direction: row;
   }
 
-  @media screen and (min-width: 500px) {
-    margin-left: 40px;
+  @media screen and (max-width: 1049px) {
+    flex-direction: column;
   }
 `;
 
@@ -93,7 +87,7 @@ export const Work = styled.div`
   width: 400px;
 
   @media screen and (max-width: 1049px) {
-    margin-top: 50px;
+    padding-top: 50px;
   }
 `;
 

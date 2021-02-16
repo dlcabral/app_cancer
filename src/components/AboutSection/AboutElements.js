@@ -12,7 +12,7 @@ export const AboutContainer = styled.div`
 
 export const AboutWrapper = styled.div`
   flex-direction: column;
-  height: 800px;
+  height: 900px;
   width: 100%;
   margin-right: auto;
   margin-left: auto;
@@ -20,6 +20,11 @@ export const AboutWrapper = styled.div`
   align-items: center;
   background: #f9f9f9;
   padding-top: 60px;
+
+  @media screen and (max-width: 780px){
+    height: auto;
+    padding-bottom: 20px;
+  }
 `;
 
 export const Img = styled.img`
@@ -75,12 +80,14 @@ export const Subtitle = styled.p`
   color: #010606;
 
   @media screen and (max-width: 750px) {
-    width: 400px;
-    font-size: 18px;
+    width: auto;
+    font-size: 16px;  
+    margin-left: 10px;
+    margin-right: 10px;
   }
 
   @media screen and (max-width: 500px) {
-    width: 450px;
+    width: auto;
   }
 `;
 
@@ -99,14 +106,6 @@ export const InfoWrap = styled.div`
     flex-direction: column;
     width: auto;
     height: auto;
-    margin-left: 0px;
-    margin-right: 0px;
-  }
-
-  @media screen and (max-width: 500px) {
-    flex-direction: column;
-    width: 480px;
-    height: 650px;
     margin-left: 0px;
     margin-right: 0px;
   }
@@ -137,9 +136,13 @@ export const Works = styled.div`
   width: 700px;
   margin-left: 100px;
 
+  @media screen and (max-width: 1540px) {
+    padding-left: 25px;
+    height: auto;
+  }
+
   @media screen and (max-width: 780px) {
     width: 480px;
-    height: 350px;
     margin-left: 0;
   }
 
@@ -153,17 +156,52 @@ export const Works = styled.div`
 export const SubtitleContact = styled.p`
   font-size: 20px;
   color: #595959;
+  font-weight: bold;
+
+  @media screen and (max-width: 750px) {
+    width: auto;
+    font-size: 16px;  
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  @media screen and (max-width: 500px) {
+    width: auto;
+  }
 `;
 
 export const SubtitleWork = styled.div`
   margin-top: 20px;
   font-size: 20px;
   color: #595959;
+  font-weight: bold;
+
+  @media screen and (max-width: 750px) {
+    width: auto;
+    font-size: 16px;  
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  @media screen and (max-width: 500px) {
+    width: auto;
+  }
 `;
 
 export const SubSubContact = styled.p`
   font-size: 16px;
   color: #595959;
+
+  @media screen and (max-width: 750px) {
+    width: auto;
+    font-size: 16px;  
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  @media screen and (max-width: 500px) {
+    width: auto;
+  }
 `;
 
 export const Years = styled.div`
@@ -193,6 +231,17 @@ export const EmailWrapper = styled.a`
   display: flex;
   flex-direction: row;
   text-decoration:none;
+
+  @media screen and (max-width: 750px) {
+    width: auto;
+    font-size: 16px;  
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  @media screen and (max-width: 500px) {
+    width: auto;
+  }
 `;
   
 export const Email = styled.p`
@@ -254,6 +303,21 @@ export const WorkWrapper = styled.div`
   display: flex;
   flex-direction: row;
   margin-top: 50px;
+
+  @media screen and (max-width: 916px) {
+    margin-top: 0px;
+  }
+
+  @media screen and (max-width: 750px) {
+    width: auto;
+    font-size: 16px;  
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  @media screen and (max-width: 500px) {
+    width: auto;
+  }
 `;
 
 
