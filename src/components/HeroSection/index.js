@@ -1,6 +1,5 @@
 import React, {useState} from 'react';
-import {Btn2} from '../Buttons/ButtonElements';
-import {HeroContainer, HeroSvg, HeroContent, HeroH1, HeroP, HeroBtnWrapper, ArrowForward, ArrowRight} from './HeroElements'; 
+import {HeroContainer, HeroSvg, HeroContent, HeroH1, HeroP, HeroBtnWrapper, ArrowForward, ArrowRight, NavLink} from './HeroElements'; 
 
 const HeroSection = () => {
   const [hover, setHover] = useState(false);
@@ -17,9 +16,19 @@ const HeroSection = () => {
           A passionate mobile & web software developer based in Winnipeg, Canada
         </HeroP>
         <HeroBtnWrapper>
-          <Btn2 to='signup' onMouseEnter={onHover} onMouseLeave={onHover} primary='true' dark='false'>
+          <NavLink 
+            to='contact' 
+            smooth={true} 
+            duration={500} 
+            spy={true} 
+            exact='true' 
+            offset={-80}
+            onMouseEnter={onHover} 
+            onMouseLeave={onHover} 
+            primary='true' 
+            dark='false'>
             Let's Talk! {hover ? <ArrowForward /> : <ArrowRight />}
-          </Btn2>
+          </NavLink>
         </HeroBtnWrapper>
       </HeroContent>
       <HeroSvg>

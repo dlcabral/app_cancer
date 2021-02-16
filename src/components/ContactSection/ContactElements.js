@@ -1,10 +1,9 @@
 import styled from 'styled-components';
-import {Link} from 'react-router-dom';
 
 export const Container = styled.div`
   display: flex;
   color: #fff;
-  height: 400px;
+  height: 590px;
   width: 100%;
   margin-right: auto;
   margin-left: auto;
@@ -17,6 +16,7 @@ export const Container = styled.div`
 
   @media screen and (max-width: 500px){
     width: 500px;
+    height: auto;
   };
 `;
 

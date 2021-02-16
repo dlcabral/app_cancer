@@ -39,13 +39,13 @@ const ContactSection = ({id})=>{
 
   return (
     <>
-      <Container id={id}>
+      <Container id={id} name={id}>
         <FormWrap>
           <Form>
             <FormH1>Would you like to contact me?</FormH1>
             <FormInput type='input' placeholder='Email' required value={email} onChange={(event)=> setEmail(event.target.value)}></FormInput>
             <FormMessage type='input' placeholder='Message' required value={message} onChange={(event)=> setMessage(event.target.value)}></FormMessage>
-            {email != '' && message != ''? <FormButton type='button' onClick={
+            {email !== '' && message !== ''? <FormButton type='button' onClick={
               ()=>handleSubmit()}>Message</FormButton> : <FormButton type='button' onClick={()=>{}}>Message</FormButton>}
             {emailValidation ? <ThankYou>Thank you for reaching me out!</ThankYou> : <></>}
             
