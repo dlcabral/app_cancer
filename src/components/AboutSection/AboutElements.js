@@ -116,6 +116,10 @@ export const Contact = styled.div`
   height: 100%;
   width: 700px;
 
+  @media screen and (max-width: 1540px) {
+    padding-left: 25px;
+  }
+
   @media screen and (max-width: 780px) {
     width: 480px;
     height: 350px;
